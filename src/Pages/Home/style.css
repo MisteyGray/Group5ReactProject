@@ -1,0 +1,924 @@
+#wholeContainer {
+  width: 75vw;
+  margin: auto;
+}
+
+#top {
+  position: fixed;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75vw;
+  height: 20vh;
+  z-index: 1;
+}
+
+#searchPopUp {
+  margin-left: 10%;
+}
+
+.popUpButton {
+  margin-left: 22%;
+  background-color: #1258dc;
+}
+
+#registerForm {
+  margin-right: 25%;
+  padding: 16px;
+  background-color: white;
+}
+
+.formContainer {
+  position: absolute;
+  top: 115px;
+  left: 28%;
+  margin-right: 95%;
+  width: 25vw;
+  height: 25vh;
+  margin-bottom: 95%;
+  padding: 10px;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 20px 10px 22px 0;
+  display: block;
+  border: none;
+  background: #d4f7ec;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #adf2dc;
+  outline: none;
+}
+
+/* 2nd form */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#slideContainer img {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 20vh;
+  width: 75vw;
+  -webkit-box-shadow: 2px 6px 45px #262525;
+          box-shadow: 2px 6px 45px #262525;
+}
+
+#middleWrapper {
+  margin-top: 25vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+}
+
+.rightSection {
+  width: 20%;
+  color: #d4f7ec;
+  background-color: #090934;
+}
+
+.middleSection {
+  width: 60%;
+  height: 100%;
+}
+
+.leftSection {
+  width: 20%;
+  color: #d4f7ec;
+  background-color: #090934;
+}
+
+#calendarWrapper {
+  height: 285.5px;
+  cursor: pointer;
+  font-size: 1vw;
+  margin-left: 2%;
+  color: #d4f7ec;
+}
+
+table {
+  border: 2px solid #d4f7ec;
+}
+
+em {
+  font-size: 18px;
+}
+
+.reservationDates {
+  font-size: 16px;
+  margin-top: 45%;
+}
+
+#monthAndYear {
+  position: relative;
+  left: 3%;
+}
+
+.monthButtons {
+  margin-top: 0%;
+  width: 2vw;
+  background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+  color: #d4f7ec;
+}
+
+.bookNowButton {
+  text-align: center;
+  width: 4vw;
+  background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+  color: #d4f7ec;
+  border-radius: 15px;
+}
+
+.reset {
+  position: absolute;
+  bottom: 20%;
+  left: 23%;
+  width: 3vw;
+  background-color: #448d76;
+}
+
+#componentWrapper {
+  font-size: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2%;
+  margin-bottom: 30%;
+}
+
+.mobileLeftSection {
+  display: none;
+}
+
+.photoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  row-gap: 5%;
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bigImageContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.bigImage {
+  height: 40vh;
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-shadow: 1px 4px 4px #000000;
+          box-shadow: 1px 4px 4px #000000;
+}
+
+#imageText {
+  color: #090934;
+  text-align: center;
+  font-family: "Gabriola", sans-serif, "Times New Roman";
+  font-size: 4vh;
+  letter-spacing: 2px;
+  line-height: 1em;
+}
+
+.linksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.photos {
+  height: 100px;
+  width: 150px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+#listContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: column;
+      -ms-flex: column;
+          flex: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logoHeader {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.titleHeader {
+  text-align: left;
+  font-size: 4vh;
+}
+
+.imgLogo {
+  width: 40%;
+  margin-left: 1%;
+}
+
+#card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cardFlex {
+  margin: 3%;
+  -webkit-box-shadow: 1px 6px 10px #000000;
+          box-shadow: 1px 6px 10px #000000;
+}
+
+.cardStyle {
+  text-align: center;
+  font-size: 18px;
+  color: #090934;
+}
+
+#cardTitle {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 4vh;
+  text-align: center;
+  text-shadow: 2px 4px 3.5px #090934;
+  color: #1258dc;
+}
+
+#form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+#contactUs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactButton {
+  background-color: #2e2fe3;
+  color: white;
+  padding: 12px 0;
+  border-radius: 30px;
+  width: 10vw;
+  border: none;
+  margin-left: 15%;
+  margin-bottom: 10px;
+}
+
+.contactButton:hover {
+  color: #090934;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 10px 100px;
+  background-blend-mode: overlay;
+  background: #d4f7ec;
+  -webkit-box-shadow: 0px 15px 25px rgba(31, 47, 71, 0.25), 0px 1px 5px rgba(0, 0, 0, 0.1), inset 0 0 0 0.5px rgba(255, 255, 255, 0.4);
+          box-shadow: 0px 15px 25px rgba(31, 47, 71, 0.25), 0px 1px 5px rgba(0, 0, 0, 0.1), inset 0 0 0 0.5px rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(250, 250, 250, 0.4);
+  text-align: center;
+  width: 25%;
+  margin: auto auto auto auto;
+}
+
+#title {
+  font-family: "Gabriola", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+  text-shadow: 2px 3px 3px #090934;
+}
+
+.businessInfo {
+  text-align: center;
+  font-family: "Gabriola", sans-serif;
+  color: #d4f7ec;
+  font-size: 26px;
+  margin: auto;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#commentField {
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #d4f7ec;
+  width: 65%;
+  padding: 8%;
+  margin: 2% auto auto auto;
+  opacity: .5;
+}
+
+.titleHeader {
+  margin-left: 1vw;
+  font-family: "Gabriola", sans-serif;
+}
+
+.listHeader {
+  margin-left: 1vw;
+  font-family: "Gabriola", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4vh;
+  line-height: 48px;
+  color: #1258dc;
+}
+
+.cardStyle {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.addList {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  border: 1px solid rgba(250, 250, 250, 0.4);
+  background-blend-mode: overlay;
+  padding: 2.5%;
+  color: #d4f7ec;
+  margin-left: 5%;
+}
+
+.addButton {
+  margin-left: 2%;
+  background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+  width: 50px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  text-shadow: 2px 2px #090934;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  color: #2e2fe3;
+}
+
+.itemList {
+  border-radius: 30px;
+  padding: 2px;
+  text-decoration: none;
+  list-style: none;
+  background: #d4f7ec;
+  color: #090934;
+  margin: 10% 5% 5% -10%;
+  height: auto;
+  text-justify: center;
+  text-indent: 10%;
+  word-wrap: break-word;
+}
+
+.deleteButton {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #2e2fe3;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  text-shadow: 2px 2px #090934;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0% 0% 0% 75%;
+  width: 4vw;
+}
+
+.deleteButton:hover {
+  color: #090934;
+}
+
+#bottomArea {
+  margin: auto;
+  border: 2px solid white;
+  background-color: #090934;
+  color: #d4f7ec;
+  font-family: "Gabriola", sans-serif;
+}
+
+#bottomFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#addressArea {
+  margin-left: 2%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2vh;
+  letter-spacing: 1px;
+}
+
+#emailLink {
+  text-decoration: none;
+  color: #d4f7ec;
+}
+
+#footerMiddle {
+  margin-left: 24%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#iconArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+  margin: 0% 0% 5% 0%;
+}
+
+.icons {
+  height: 50px;
+  width: 50px;
+}
+
+#footerLogo {
+  height: 75px;
+  width: 75px;
+}
+
+#tagLine {
+  font-size: 7vh;
+  margin: 0px;
+}
+
+#copyrightArea {
+  text-align: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 2%;
+}
+
+#addressArea {
+  display: none;
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1201px) {
+  #slideContainer img {
+    width: 100%;
+  }
+  #searchPopUp {
+    margin-left: 50%;
+  }
+  .popUpButton {
+    margin-left: 32%;
+    background-color: #1258dc;
+  }
+  #registerForm {
+    margin-right: 40%;
+  }
+  #contactUs {
+    display: block;
+    width: auto;
+  }
+  .input {
+    width: 65%;
+    text-align: center;
+    padding: 8px 0;
+    margin-left: 2.5vw;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactButton {
+    padding: 7px 0px;
+    margin-left: 2vw;
+    width: 11vw;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+  .commentField {
+    font-size: 12px;
+    text-align: left;
+    z-index: 10, 000px;
+  }
+  .addList {
+    width: 9vw;
+  }
+  .addButton {
+    margin-left: 2%;
+    width: 50px;
+  }
+  .deleteButton {
+    width: 4.25vw;
+    margin-left: 70%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #wholeContainer {
+    width: 100vw;
+  }
+  #slideContainer img {
+    width: 100%;
+  }
+  #top {
+    width: 100%;
+  }
+  #searchPopUp {
+    margin-left: 35%;
+    width: 12vw;
+  }
+  #middleWrapper {
+    display: block;
+  }
+  .mobileLeftSection {
+    height: 49vh;
+    display: block;
+    background-color: #090934;
+  }
+  .monthButtons {
+    margin-top: 4%;
+  }
+  .leftSection {
+    display: none;
+  }
+  #componentWrapper {
+    margin-left: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #d4f7ec;
+  }
+  #calendarWrapper {
+    cursor: pointer;
+    font-size: 2vw;
+  }
+  table {
+    height: 19vh;
+    width: 18vw;
+    font-size: 2vw;
+  }
+  .reset {
+    position: relative;
+    top: 99%;
+    left: 33%;
+    width: 5vw;
+    border-radius: 30px;
+  }
+  #monthClick {
+    position: relative;
+    bottom: 4.5%;
+    cursor: pointer;
+  }
+  .bookNowButton {
+    width: 7vw;
+    margin-left: 30%;
+  }
+  .reservationDates {
+    font-size: 3vw;
+    margin-top: 0%;
+  }
+  .middleSection {
+    margin: 1%;
+    width: auto;
+  }
+  .rightSection {
+    width: auto;
+    margin: auto;
+  }
+  .imgLogo {
+    width: 12vw;
+    margin-top: 3vh;
+  }
+  .logoHeader {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .listHeader {
+    font-size: 5vh;
+  }
+  .titleHeader {
+    margin-left: 4vw;
+    font-size: 5vh;
+  }
+  .addButton {
+    margin-top: 5%;
+    padding: 2%;
+  }
+  .addList {
+    margin-top: 8%;
+    font-size: 16px;
+    margin-left: 1vw;
+    padding: 2vw;
+  }
+  .titleHeader {
+    text-align: center;
+    font-size: 4vh;
+  }
+  .addButton {
+    text-align: center;
+    width: 8vw;
+    margin-top: 5%;
+    font-size: 16px;
+  }
+  .itemList {
+    width: 16vw;
+    height: 5vh;
+    text-indent: 9%;
+    margin-left: 20%;
+  }
+  .deleteButton {
+    width: 8vw;
+    margin-right: 20%;
+  }
+  .bigImage {
+    height: 400px;
+    width: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mobileContactArea {
+    display: block;
+  }
+  #form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2vh;
+  }
+  #contactUs {
+    margin: auto;
+  }
+  #title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .contactForm {
+    width: 40vw;
+  }
+  #commentField {
+    font-size: 12px;
+    text-align: center;
+    width: 25vw;
+  }
+  .contactButton {
+    padding: 2px 0px;
+    width: 20vw;
+    margin-left: 28%;
+  }
+  #addressArea {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #slideContainer img {
+    width: 100vw;
+  }
+  .imgLogo {
+    width: 28%;
+    margin-top: 3vh;
+  }
+  #logo {
+    width: 25vw;
+    height: 15vh;
+  }
+  .logoHeader {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  table {
+    font-size: 3.5vw;
+  }
+  #monthClick {
+    bottom: 1.5%;
+  }
+  .monthButtons {
+    margin: 1%;
+    width: 8%;
+  }
+  .nightlyPrice {
+    margin-bottom: 0px;
+  }
+  .bookNowButton {
+    width: 10vw;
+  }
+  .reset {
+    position: relative;
+    top: 59%;
+    left: 24%;
+    width: 13vw;
+  }
+  .contactButton {
+    margin-left: 39%;
+  }
+  .mobileLeftSection {
+    height: 40vh;
+  }
+  .rightSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+  .listHeader {
+    font-size: 6vh;
+  }
+  .titleHeader {
+    margin-left: 7vw;
+    font-size: 5vh;
+  }
+  .addList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 16px;
+    margin-left: .5vw;
+    margin-bottom: 2.5vh;
+    padding: .5vh 1vw;
+  }
+  .addButton {
+    position: relative;
+    right: 30vw;
+    left: 52vw;
+    bottom: 5vh;
+    width: 15vw;
+  }
+  .itemList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 55vw;
+    height: 6vh;
+    text-indent: 9%;
+  }
+  .deleteButton {
+    width: 20vw;
+  }
+  .bigImage {
+    max-height: 400px;
+    width: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #addressArea {
+    margin: auto;
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

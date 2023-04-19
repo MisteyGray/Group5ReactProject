@@ -1,0 +1,865 @@
+$mintColor: #d4f7ec;
+$greenColor: #448d76;
+$skyBlueColor: #1258dc;
+$cobaltBlueColor: #2e2fe3;
+$darkNavyColor: #090934;
+$headerFont: "Gabriola", sans-serif;
+$regFont: "Segoe UI", sans-serif;
+$boxShadow: 1px 4px 4px #000000;
+$white-filler: white;
+
+#wholeContainer {
+    width: 75vw;
+    margin: auto;
+}
+
+#top {
+    position: fixed;
+    background-color: $white-filler;
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: 20vh;
+    z-index: 1;
+}
+
+#searchPopUp {
+    margin-left: 10%;
+}
+
+.popUpButton {
+    margin-left: 22%;
+    background-color: $skyBlueColor;
+}
+
+#registerForm {
+    margin-right: 25%;
+    padding: 16px;
+    background-color: white;
+}
+
+.formContainer {
+    position: absolute;
+    top: 115px;
+    left: 28%;
+    margin-right: 95%;
+    width: 25vw;
+    height: 25vh;
+    margin-bottom: 95%;
+    padding: 10px;
+}
+
+
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 20px 10px 22px 0;
+    display: block;
+    border: none;
+    background: #d4f7ec;
+}
+
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #adf2dc;
+    outline: none;
+}
+
+/* 2nd form */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #0000;
+    box-sizing: border-box;
+}
+
+
+#slideContainer img {
+    justify-content: flex-start;
+    height: 20vh;
+    width: 75vw;
+    box-shadow: 2px 6px 45px #262525;
+}
+
+#middleWrapper {
+    margin-top: 25vh;
+    background-color: $white-filler;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1%;
+}
+
+.rightSection {
+    width: 20%;
+    color: $mintColor;
+    background-color: $darkNavyColor;
+}
+
+.middleSection {
+    width: 60%;
+    height: 100%;
+}
+
+.leftSection {
+    width: 20%;
+    color: $mintColor;
+    background-color: $darkNavyColor;
+}
+
+// START calendar styling
+// -----------------
+
+#calendarWrapper {
+    height: 285.5px;
+    cursor: pointer;
+    font-size: 1vw;
+    margin-left: 2%;
+    color: $mintColor;
+}
+
+table {
+    border: 2px solid $mintColor;
+}
+
+em {
+    font-size: 18px;
+}
+
+.reservationDates {
+    font-size: 16px;
+    margin-top: 45%;
+}
+
+#monthAndYear {
+    position: relative;
+    left: 3%;
+}
+
+.monthButtons {
+    margin-top: 0%;
+    width: 2vw;
+    background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+    color: $mintColor;
+}
+
+.bookNowButton {
+    text-align: center;
+    width: 4vw;
+    background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+    color: $mintColor;
+    border-radius: 15px;
+}
+
+.reset {
+    position: absolute;
+    bottom: 20%;
+    left: 23%;
+    width: 3vw;
+    background-color: #448d76;
+}
+
+#componentWrapper {
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-bottom: 30%;
+}
+
+.mobileLeftSection {
+    display: none;
+}
+
+.photoContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 5%;
+    column-gap: 2%;
+    justify-content: space-evenly;
+}
+
+.bigImageContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.bigImage {
+    height: 40vh;
+    width: 100%;
+    align-self: flex-start;
+    box-shadow: $boxShadow;
+}
+
+#imageText {
+    color: $darkNavyColor;
+    text-align: center;
+    font-family: $headerFont, 'Times New Roman';
+    font-size: 4vh;
+    letter-spacing: 2px;
+    line-height: 1em;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photos {
+    height: 100px;
+    width: 150px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#listContainer {
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+}
+
+.logoHeader {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1%;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.titleHeader {
+    text-align: left;
+    font-size: 4vh;
+}
+
+.imgLogo {
+    width: 40%;
+    margin-left: 1%;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+}
+
+#cardFlex {
+    margin: 3%;
+    box-shadow: 1px 6px 10px #000000;
+}
+
+.cardStyle {
+    text-align: center;
+    font-size: 18px;
+    color: $darkNavyColor;
+}
+
+#cardTitle {
+    font-family: $regFont;
+    font-size: 4vh;
+    text-align: center;
+    text-shadow: 2px 4px 3.5px $darkNavyColor;
+    color: $skyBlueColor;
+}
+
+#form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#contactUs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactButton {
+    background-color: $cobaltBlueColor;
+    color: $white-filler;
+    padding: 12px 0;
+    border-radius: 30px;
+    width: 10vw;
+    border: none;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+
+.contactButton:hover {
+    color: $darkNavyColor
+}
+
+.input {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 10px 100px;
+    background-blend-mode: overlay;
+    background: $mintColor;
+    box-shadow: 0px 15px 25px rgba(31, 47, 71, 0.25), 0px 1px 5px rgba(0, 0, 0, 0.1), inset 0 0 0 0.5px rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(250, 250, 250, 0.4);
+    text-align: center;
+    width: 25%;
+    margin: auto auto auto auto;
+}
+
+#title {
+    font-family: $headerFont;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+    text-shadow: 2px 3px 3px $darkNavyColor;
+}
+
+.businessInfo {
+    text-align: center;
+    font-family: $headerFont;
+    color: $mintColor;
+    font-size: 26px;
+    margin: auto;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#commentField {
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    background-color: $mintColor;
+    width: 65%;
+    padding: 8%;
+    margin: 2% auto auto auto;
+    opacity: .5;
+}
+
+.titleHeader {
+    margin-left: 1vw;
+    font-family: $headerFont;
+}
+
+.listHeader {
+    margin-left: 1vw;
+    font-family: $headerFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4vh;
+    line-height: 48px;
+    color: $skyBlueColor;
+}
+
+.cardStyle {
+    font-family: $regFont;
+}
+
+.addList {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    border: 1px solid rgba(250, 250, 250, 0.4);
+    background-blend-mode: overlay;
+    padding: 2.5%;
+    color: $mintColor;
+    margin-left: 5%;
+}
+
+.addButton {
+    margin-left: 2%;
+    background: linear-gradient(91.4deg, #1258dc 0%, #448d76 50%, #d4f7ec 100%);
+    width: 50px;
+    border: none;
+    border-radius: 15px;
+    color: $white-filler;
+    text-shadow: 2px 2px $darkNavyColor;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    color: $cobaltBlueColor;
+}
+
+.itemList {
+    border-radius: 30px;
+    padding: 2px;
+    text-decoration: none;
+    list-style: none;
+    background: $mintColor;
+    color: $darkNavyColor;
+    margin: 10% 5% 5% -10%;
+    height: auto;
+    text-justify: center;
+    text-indent: 10%;
+    word-wrap: break-word;
+}
+
+.deleteButton {
+    font-family: $regFont;
+    background-color: $cobaltBlueColor;
+    border: none;
+    border-radius: 30px;
+    color: $white-filler;
+    text-shadow: 2px 2px $darkNavyColor;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0% 0% 0% 75%;
+    width: 4vw;
+}
+
+.deleteButton:hover {
+    color: $darkNavyColor;
+}
+
+#bottomArea {
+    margin: auto;
+    border: 2px solid white;
+    background-color: $darkNavyColor;
+    color: $mintColor;
+    font-family: $headerFont;
+}
+
+#bottomFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#addressArea {
+    margin-left: 2%;
+    align-self: center;
+    font-size: 2vh;
+    letter-spacing: 1px;
+}
+
+#emailLink {
+    text-decoration: none;
+    color: $mintColor;
+}
+
+#footerMiddle {
+    margin-left:24%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#iconArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5%;
+    margin: 0% 0% 5% 0%;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+}
+
+#footerLogo {
+    height: 75px;
+    width: 75px;
+}
+
+#tagLine {
+    font-size: 7vh;
+    margin: 0px;
+}
+
+#copyrightArea {
+    text-align: end;
+    align-self: flex-end;
+    margin-right: 2%;
+}
+
+#addressArea {
+    display: none;
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1201px) {
+
+    #slideContainer img {
+        width: 100%;
+    }
+
+    #searchPopUp {
+        margin-left: 50%;
+    }
+
+    .popUpButton {
+        margin-left: 32%;
+        background-color: $skyBlueColor;
+    }
+
+    #registerForm {
+        margin-right: 40%;
+    }
+
+    #contactUs {
+        display: block;
+        width: auto;
+    }
+
+    .input {
+        width: 65%;
+        text-align: center;
+        padding: 8px 0;
+        margin-left: 2.5vw;
+        align-content: center;
+        align-items: center;
+    }
+
+    .contactButton {
+        padding: 7px 0px;
+        margin-left: 2vw;
+        width: 11vw;
+        border-radius: 30px;
+        margin-bottom: 15px;
+    }
+
+    .commentField {
+        font-size: 12px;
+        text-align: left;
+        z-index: 10, 000px;
+    }
+
+    .addList {
+        width: 9vw;
+    }
+
+    .addButton {
+        margin-left: 2%;
+        width: 50px;
+    }
+
+    .deleteButton {
+        width: 4.25vw;
+        margin-left: 70%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #wholeContainer {
+        width: 100vw;
+    }
+
+    #slideContainer img {
+        width: 100%;
+    }
+
+    #top {
+        width: 100%;
+    }
+
+    #searchPopUp {
+        margin-left: 35%;
+        width: 12vw;
+    }
+
+    #middleWrapper {
+        display: block;
+    }
+
+    .mobileLeftSection {
+        height: 49vh;
+        display: block;
+        background-color: $darkNavyColor;
+    }
+
+    .monthButtons {
+        margin-top: 4%;
+    }
+
+    .leftSection {
+        display: none;
+    }
+
+    #componentWrapper {
+        margin-left: 3%;
+        display: flex;
+        flex-direction: row;
+        color: $mintColor;
+    }
+
+    #calendarWrapper {
+        cursor: pointer;
+        font-size: 2vw;
+    }
+
+    table {
+        height: 19vh;
+        width: 18vw;
+        font-size: 2vw;
+    }
+
+    .reset {
+        position: relative;
+        top: 99%;
+        left: 33%;
+        width: 5vw;
+        border-radius: 30px;
+    }
+
+    #monthClick {
+        position: relative;
+        bottom: 4.5%;
+        cursor: pointer;
+    }
+
+    .bookNowButton {
+        width: 7vw;
+        margin-left: 30%;
+    }
+
+    .reservationDates {
+        font-size: 3vw;
+        margin-top: 0%;
+    }
+
+    .middleSection {
+        margin: 1%;
+        width: auto;
+    }
+
+    .rightSection {
+        width: auto;
+        margin: auto;
+    }
+
+    .imgLogo {
+        width: 12vw;
+        margin-top: 3vh;
+    }
+
+    .logoHeader {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .listHeader {
+        font-size: 5vh;
+    }
+
+    .titleHeader {
+        margin-left: 4vw;
+        font-size: 5vh;
+    }
+
+    .addButton {
+        margin-top: 5%;
+        padding: 2%;
+    }
+
+    .addList {
+        margin-top: 8%;
+        font-size: 16px;
+        margin-left: 1vw;
+        padding: 2vw;
+    }
+
+    .titleHeader {
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .addButton {
+        text-align: center;
+        width: 8vw;
+        margin-top: 5%;
+        font-size: 16px;
+    }
+
+    .itemList {
+        width: 16vw;
+        height: 5vh;
+        text-indent: 9%;
+        margin-left: 20%;
+    }
+
+    .deleteButton {
+        width: 8vw;
+        margin-right: 20%;
+    }
+
+    .bigImage {
+        height: 400px;
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .mobileContactArea {
+        display: block;
+    }
+
+    #form-wrapper {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    #contactUs {
+        margin: auto;
+    }
+
+    #title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .contactForm {
+        width: 40vw;
+    }
+
+    #commentField {
+        font-size: 12px;
+        text-align: center;
+        width: 25vw;
+    }
+
+    .contactButton {
+        padding: 2px 0px;
+        width: 20vw;
+        margin-left: 28%;
+    }
+
+    #addressArea {
+        margin: auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #slideContainer img {
+        width: 100vw;
+    }
+
+    .imgLogo {
+        width: 28%;
+        margin-top: 3vh;
+    }
+
+    #logo {
+        width: 25vw;
+        height: 15vh;
+    }
+
+    .logoHeader {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    table {
+        font-size: 3.5vw;
+    }
+
+    #monthClick {
+        bottom: 1.5%;
+    }
+
+    .monthButtons {
+        margin: 1%;
+        width: 8%;
+    }
+
+    .nightlyPrice {
+        margin-bottom: 0px;
+    }
+
+    .bookNowButton {
+        width: 10vw;
+    }
+
+    .reset {
+        position: relative;
+        top: 59%;
+        left: 24%;
+        width: 13vw;
+    }
+
+    .contactButton {
+        margin-left: 39%;
+    }
+
+    .mobileLeftSection {
+        height: 40vh;
+    }
+
+    .rightSection {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .listHeader {
+        font-size: 6vh;
+    }
+
+    .titleHeader {
+        margin-left: 7vw;
+        font-size: 5vh;
+    }
+
+    .addList {
+        flex-direction: column;
+        font-size: 16px;
+        margin-left: .5vw;
+        margin-bottom: 2.5vh;
+        padding: .5vh 1vw;
+    }
+
+    .addButton {
+        position: relative;
+        right: 30vw;
+        left: 52vw;
+        bottom: 5vh;
+        width: 15vw;
+    }
+
+    .itemList {
+        flex-direction: column;
+        width: 55vw;
+        height: 6vh;
+        text-indent: 9%;
+    }
+
+    .deleteButton {
+        width: 20vw;
+    }
+
+    .bigImage {
+        max-height: 400px;
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    #addressArea {
+        margin: auto;
+        display: block;
+    }
+}
